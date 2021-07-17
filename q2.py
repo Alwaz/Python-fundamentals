@@ -1,16 +1,17 @@
-# this method will check the conjuctor
-def colletz_conjuctor(n):
-    chain = []
-    while (n != 1):
-        chain.append(n)
-        print(n, end='-')
-        if (n % 2 != 0):
-            n = 3 * n + 1
-        else:
-            n = n // 2
-    print(n)
-    return len(chain) + 1
+length=int(input('how long is your flag? '))
+width=int(input('how wide is your flag? '))
+
+length_2=int(input('how long ? '))
+width_2=int(input('how wide ? '))
 
 
-num = int(input('Please enter a number: '))
-print('The length of collatz chain is: ', colletz_conjuctor(num))
+
+for l in range(length):
+    for w in range(width):
+        print('*', end=' ')
+    print()    
+
+for l2 in range(length_2):
+    for w2 in range(width_2):
+        print('*', end=' ')
+    print()   
